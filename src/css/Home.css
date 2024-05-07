@@ -1,0 +1,19 @@
+.home {
+  background-color: var(--dark-yellow);
+  height: calc(100vh - 78px - 160px);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+.home img {
+  height: 100%;
+}
+.adelia {
+  position:absolute;
+  left: -50px;
+}
+.graphs {
+  position: absolute;
+  right: 0;
+}

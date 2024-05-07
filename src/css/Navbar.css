@@ -1,0 +1,14 @@
+nav {
+  padding: 10px 200px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: .1px solid #eeeeef;
+  box-shadow: 0 0 15px 0 rgba(82, 82, 82, 0.15);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}

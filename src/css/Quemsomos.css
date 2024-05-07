@@ -1,0 +1,33 @@
+.quemsomos {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  max-width: 40%;
+}
+ .quemsomos h1 {
+  color: var(--green);
+ }
+
+ .membro {
+  display: flex;
+  margin-bottom: 2rem;
+ }
+
+ .membro img {
+  padding: 2rem;
+  height: fit-content;
+ }
+ .membro h3 {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  color: var(--green);
+ }
+ .membro p {
+  font-style: italic;
+ }
