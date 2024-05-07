@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Mostra de Cinema Negro Adélia Sampaio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório do site da Mostra de Cinema Negro Adélia Sampaio, que está sendo desenvolvido utilizando ReactJS com Vite.
 
-Currently, two official plugins are available:
+## Motivação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O site da Mostra de Cinema Negro Adélia Sampaio estava anteriormente construído em Wordpress. Decidimos migrar para ReactJS visando maior flexibilidade, performance e controle sobre o desenvolvimento.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
+- ReactJS
+- Vite
+- Typescript
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Optamos por utilizar ReactJS com Vite devido à simplicidade de desenvolvimento e eficiência.
 
-- Configure the top-level `parserOptions` property like this:
+## Progresso
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+O desenvolvimento do site está em andamento. Atualmente, estamos na marca de 20% de conclusão.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+O cinema negro é resistência, representatividade e voz. Estamos comprometidos em criar um site que celebre e promova a diversidade e a riqueza do cinema negro. Vamos juntos fazer a diferença!  🎬🌟
