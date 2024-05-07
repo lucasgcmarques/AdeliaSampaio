@@ -17,4 +17,4 @@ Optamos por utilizar ReactJS com Vite devido à simplicidade de desenvolvimento 
 
 O desenvolvimento do site está em andamento. Atualmente, estamos na marca de 20% de conclusão.
 
-O cinema negro é resistência, representatividade e voz. Estamos comprometidos em criar um site que celebre e promova a diversidade e a riqueza do cinema negro. Vamos juntos fazer a diferença!  🎬🌟
+*O cinema negro é resistência, representatividade e voz. Estamos comprometidos em criar um site que celebre e promova a diversidade e a riqueza do cinema negro. Vamos juntos fazer a diferença!*  🎬🌟
