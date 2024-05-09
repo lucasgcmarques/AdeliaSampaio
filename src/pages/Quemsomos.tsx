@@ -6,7 +6,7 @@ export default function Quemsomos() {
   return (
     <>  
       <Navbar/>
-      <div className="quemsomos">
+      <div className="main">
         <div>
           <h1 className="title">QUEM SOMOS</h1>
           <p className="justify-text">

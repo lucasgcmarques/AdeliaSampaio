@@ -1,13 +1,4 @@
-.quemsomos {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  max-width: 40%;
-}
- .quemsomos h1 {
+ .main h1 {
   color: var(--green);
  }
 
