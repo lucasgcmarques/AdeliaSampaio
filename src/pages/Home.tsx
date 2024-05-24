@@ -1,9 +1,9 @@
-import { Footer } from './components/Footer'
-import { Navbar } from './components/Navbar'
-import { AdeliaImg, EdgeImg } from './utils'
 import './css/Home.css'
+import { Navbar } from '../components/Navbar'
+import { Footer } from '../components/Footer'
+import { AdeliaImg, EdgeImg } from '../utils'
 
-function App() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -16,4 +16,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: var(--dark);
+    background-color: var(--background);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --dark: #0f0e0e;
+    --gray: #c4c4c4;
+    --yellow: #eea80a;
+    --dark-yellow: #d99800;
+    --orange: #ff6100;
+    --red: #c70402;
+    --green: #3c6128;
+    --purple: #93679b;
+    --background: #fffefa;
+
+    --body: #0f0e0e;
+    --muted: var(--gray);
+  }
+}
+
+.title {
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  max-width: 40%;
+}
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
+}
+.carousel-item {
+  min-height: 200px;
+  min-width: 400px;
+  padding: 14px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 90%;
+  pointer-events: none;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
