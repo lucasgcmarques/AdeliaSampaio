@@ -5,14 +5,20 @@ export default {
     extend: {
       colors: {
         yellow: '#eea80a',
-        'dark-yellow': '#d99800',
         orange: '#ff6100',
         red: '#c70402',
         green: '#3c6128',
         purple: '#93679b',
-        background: '#fffefa',
+      },
+      fontFamily: {
+        sans: ['Karla', 'sans-serif'],
       },
     },
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /(bg|text|border)-(yellow|orange|red|green|purple)/,
+    },
+  ],
 }

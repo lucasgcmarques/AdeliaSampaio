@@ -7,107 +7,75 @@ import {
 } from '../components/Linha/Accordion'
 import { Navbar } from '../components/Navbar'
 import '../css/Linha.css'
-// import { Carousel } from '../components/Carousel/Carousel'
-// import { images2019 } from '../Data/2019'
+import { LINHA_DATA } from '../data/LINHA_DATA'
+import { Carousel } from '../components/Carousel/Carousel'
 
 export default function Linha() {
   return (
     <>
       <Navbar />
-      <div className="linha">
-        <h1 className="title">QUEM SOMOS</h1>
+      <main className="flex flex-col pb-52 bg-zinc-100">
+        <div className="lg:mx-96 md:mx-28 mx-6 pt-60 mb-28">
+          <h1 className="md:text-6xl text-4xl mb-6 italic text-green uppercase">
+            Linha do Tempo
+          </h1>
+        </div>
 
-        <Accordion>
-          <AccordionTitle
-            ano="2021"
-            color="var(--green)"
-            title="V MOSTRA COMPETITIVA DE CINEMA NEGRO ADÉLIA SAMPAIO"
-          ></AccordionTitle>
-          <AccordionContent>
-            <div className="accordion-text">
-              Prevista para os dias 21 a 25 de outubro, a IV Mostra Competitiva
-              de Cinema Negro Adélia Sampaio estreia em formato online com
-              ambrangência internacional.
-            </div>
-          </AccordionContent>
-        </Accordion>
-        <Accordion>
-          <AccordionTitle
-            ano="2020"
-            color="var(--orange)"
-            title="IV MOSTRA COMPETITIVA DE CINEMA NEGRO ADÉLIA SAMPAIO"
-          ></AccordionTitle>
-          <AccordionContent>
-            <div className="accordion-text">
-              Prevista para os dias 21 a 25 de outubro, a IV Mostra Competitiva
-              de Cinema Negro Adélia Sampaio estreia em formato online com
-              ambrangência internacional.
-            </div>
-          </AccordionContent>
-        </Accordion>
-        <Accordion>
-          <AccordionTitle
-            ano="2019"
-            color="var(--red)"
-            title="III MOSTRA COMPETITIVA DE CINEMA NEGRO ADÉLIA SAMPAIO"
-          >
-            <div className="flex text-red gap-3">
-              <div className="flex gap-2">
-                <Film /> <div>89 filmes inscritos</div>
-              </div>
-              <div className="flex gap-2">
-                <Layers /> <div>9 categorias</div>
-              </div>
-              <div className="flex gap-2">
-                <BadgeCheck /> <div>21 selecionados</div>
-              </div>
-              <div className="flex gap-2">
-                <Award /> <div>9 premiados</div>
-              </div>
-            </div>
-          </AccordionTitle>
-          <AccordionContent>
-            {/* <Carousel images={images2019}/> */}
-            <div className="accordion-text">
-              <h3>
-                <span className="text-red font-italic font-weight-bold text-uppercase mr-3">
-                  Melhor Atriz_
-                </span>
-                <span className="font-weight-bold mr-3">Mãe não Chora </span>
-                <span className="font-weight-normal">Vanessa Oliveira</span>
-              </h3>
-              <h3>
-                <span className="text-red font-italic font-weight-bold text-uppercase mr-3">
-                  Melhor Atriz_
-                </span>
-                <span className="font-weight-bold mr-3">Mãe não Chora </span>
-                <span className="font-weight-normal">Vanessa Oliveira</span>
-              </h3>
-              <h3>
-                <span className="text-red font-italic font-weight-bold text-uppercase mr-3">
-                  Melhor Atriz_
-                </span>
-                <span className="font-weight-bold mr-3">Mãe não Chora </span>
-                <span className="font-weight-normal">Vanessa Oliveira</span>
-              </h3>
-              <h3>
-                <span className="text-red font-italic font-weight-bold text-uppercase mr-3">
-                  Melhor Atriz_
-                </span>
-                <span className="font-weight-bold mr-3">Mãe não Chora </span>
-                <span className="font-weight-normal">Vanessa Oliveira</span>
-              </h3>
-              <h3>
-                <span className="text-red font-italic font-weight-bold text-uppercase mr-3">
-                  Melhor Atriz_
-                </span>
-                <span className="font-weight-bold mr-3">Mãe não Chora </span>
-                <span className="font-weight-normal">Vanessa Oliveira</span>
-              </h3>
-            </div>
-          </AccordionContent>
-        </Accordion>
-      </div>
+        {LINHA_DATA.map((item, i) => (
+          <Accordion key={i}>
+            <AccordionTitle
+              ano={item.ano}
+              color={item.color}
+              title={item.title}
+            >
+              {item.info && (
+                <div className={`flex text-${item.color} gap-3`}>
+                  <div className="flex gap-2">
+                    <Film />{' '}
+                    <div>{item.info.filmesInscritos} filmes inscritos</div>
+                  </div>
+                  <div className="flex gap-2">
+                    <Layers /> <div>{item.info.categorias} categorias</div>
+                  </div>
+                  <div className="flex gap-2">
+                    <BadgeCheck />{' '}
+                    <div>{item.info.selecionados} selecionados</div>
+                  </div>
+                  <div className="flex gap-2">
+                    <Award /> <div>{item.info.premiados} premiados</div>
+                  </div>
+                </div>
+              )}
+            </AccordionTitle>
+            <AccordionContent>
+              {item.description && (
+                <div className="max-w-[590px] ml-[48%]">{item.description}</div>
+              )}
+              {item.galllery && <Carousel gallery={item.galllery} />}
+              {item.premios &&
+                item.premios.map((premio, i) => (
+                  <div className="mb-1.5 space-x-4 ml-[48%]" key={i}>
+                    {premio.categoria && (
+                      <span
+                        className={`font-bold text-${item.color} italic uppercase`}
+                      >
+                        {premio.categoria}_
+                      </span>
+                    )}
+                    {premio.filme && (
+                      <span className="font-bold text-zinc-500">
+                        {premio.filme}
+                      </span>
+                    )}
+                    {premio.vencedor && (
+                      <span className=" text-zinc-500">{premio.vencedor}</span>
+                    )}
+                  </div>
+                ))}
+            </AccordionContent>
+          </Accordion>
+        ))}
+      </main>
       <Footer />
     </>
   )
