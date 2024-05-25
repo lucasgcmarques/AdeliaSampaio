@@ -7,10 +7,10 @@ export default function Quemsomos() {
     <>
       <Navbar />
       <main className="bg-zinc-100">
-        <div className="lg:mx-96 md:mx-28 mx-6 pt-60">
+        <div className="xl:mx-96 lg:mx-28 md:mx-16 mx-6 lg:pt-40 pt-16 lg:mb-28 mb-8">
           <div className="mb-28 justify-text">
-            <h1 className="md:text-6xl text-4xl mb-6 italic text-green">
-              QUEM SOMOS
+            <h1 className="md:text-6xl text-4xl lg:mb-28 mb-12 font-extralight italic text-green uppercase">
+              {QUEMSOMOS_TEXT.TITLE}
             </h1>
             <div className="space-y-6">
               {QUEMSOMOS_TEXT.TEXT.map((text) => (

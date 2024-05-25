@@ -1,7 +1,6 @@
 import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar'
 import { AdeliaImg, EdgeImg } from './utils'
-import './css/Home.css'
 
 function App() {
   return (

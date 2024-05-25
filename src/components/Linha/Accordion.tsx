@@ -44,15 +44,18 @@ export const AccordionTitle = ({
 }: AccordionTitleProps) => {
   const { toggleIsActive } = useAccordionContext()
   return (
-    <div className="flex cursor-pointer ml-auto w-2/3" onClick={toggleIsActive}>
+    <div
+      className="flex cursor-pointer xl:ml-96 lg:ml-28  md:ml-16 ml-6"
+      onClick={toggleIsActive}
+    >
       <span
-        className={`text-${color} w-40 text-end font-semibold relative text-6xl top-2`}
+        className={`text-${color} lg:w-40  text-start mr-2 font-semibold md:relative lg:text-6xl md:text-4xl text-2xl md:top-2`}
       >
         {ano}
       </span>
       <div className="w-full">
         <h2
-          className={`border-b-2  w-full  border-${color} text-${color} text-2xl italic pt-3 pb-4 pl-20`}
+          className={`border-b-2  w-full  border-${color} text-${color} text-2xl italic md:pt-3 lg:pb-4 lg:pl-20 md:pl-8 `}
         >
           {title}
         </h2>
@@ -67,7 +70,7 @@ export const AccordionContent = ({ children }: AccordionContentProps) => {
   const { isActive } = useAccordionContext()
   return (
     <div
-      className={`flex flex-col overflow-hidden ${isActive ? 'show' : 'hide'} mt-6`}
+      className={`flex flex-col overflow-hidden transition-all duration-[0.4s] ease-in ${isActive ? 'max-h-[1000px]' : 'max-h-0'} mt-6`}
     >
       {children}
     </div>

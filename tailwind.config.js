@@ -18,7 +18,7 @@ export default {
   plugins: [],
   safelist: [
     {
-      pattern: /(bg|text|border)-(yellow|orange|red|green|purple)/,
+      pattern: /(bg|text|border)-(yellow|orange|red|green|purple|black)/,
     },
   ],
 }

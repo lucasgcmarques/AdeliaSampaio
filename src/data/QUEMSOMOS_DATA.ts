@@ -1,6 +1,7 @@
 import { EdileuzaImg, MarcusImg, MarisolImg } from '../utils'
 
 export const QUEMSOMOS_TEXT = {
+  TITLE: 'Quem somos',
   TEXT: [
     'A Mostra Competitiva de Cinema Negro Adelia Sampaio surge a partir da disciplina “Etnologia Visual da Imagem do Negro no Cinema” (ETNOVIS) ministrada na Universidade de Brasília pela cineasta e professora Edileuza Penha de Souza. A iniciativa busca dar visibilidade e difundir a produção audiovisual de mulheres negras, fomentando o trabalho de diretoras, de produtoras, de realizadoras, de câmeras, de montadoras, de cenógrafas e de roteiristas, pertencentes a diferentes gerações e localizações do Brasil e do exterior, afim de romper com preconceitos e estereótipos; exercitando a possibilidade de novos olhares e concepções.',
     'Resgatar a atuação das mulheres negras em diferentes instâncias é necessário para que se possa compreender essa trajetória de luta e resistência, pautada em um contexto de sexismo e racismo, questões históricas que excluem as mulheres, principalmente as negras, da participação social, como também, das atividades cinematográficas.',
